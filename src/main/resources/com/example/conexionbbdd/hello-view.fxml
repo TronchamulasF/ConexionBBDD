@@ -1,16 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.conexionbbdd.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="titulo" prefHeight="65.0" prefWidth="424.0" text="     Tabla de ir_sequence" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="8.0" prefWidth="568.0">
+         <children>
+            <Label prefHeight="70.0" prefWidth="70.0" text="       Buscar" />
+            <TextField prefHeight="29.0" prefWidth="509.0" />
+            <Button fx:id="buscar" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fx:id="buscar" fitHeight="21.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Fotos/lupa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="acciones" mnemonicParsing="false" prefHeight="54.0" prefWidth="36.0">
+               <graphic>
+                  <ImageView fx:id="acciones" fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Fotos/sumar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="acciones" mnemonicParsing="false" prefHeight="31.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fx:id="acciones" fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Fotos/lapiz.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="acciones" mnemonicParsing="false" prefHeight="38.0" prefWidth="33.0">
+               <graphic>
+                  <ImageView fx:id="acciones" fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Fotos/basura.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <TableView prefHeight="435.0" prefWidth="560.0">
+        <columns>
+            <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="202.0" text="Column 1" />
+            <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="202.0" text="Column 2" />
+          <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="202.0" text="Column 3" />
+          <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="202.0" text="Column 4" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
 </VBox>

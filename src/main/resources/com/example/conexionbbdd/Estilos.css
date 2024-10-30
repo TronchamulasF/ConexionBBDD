@@ -1,0 +1,12 @@
+TableView {
+    -fx-background-color: lightblue;
+}
+#titulo {
+    -fx-text-fill: red;
+}
+#buscar {
+    -fx-background-color: gray;
+}
+#acciones {
+    -fx-background-color: lightgreen;
+}
