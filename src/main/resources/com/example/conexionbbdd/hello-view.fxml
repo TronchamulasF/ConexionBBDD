@@ -14,18 +14,24 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="titulo" prefHeight="65.0" prefWidth="424.0" text="     Tabla de ir_sequence" textAlignment="CENTER">
-         <font>
-            <Font size="27.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="10.0" />
-         </VBox.margin>
-      </Label>
+      <HBox prefHeight="70.0" prefWidth="850.0">
+         <children>
+            <Label fx:id="titulo" prefHeight="65.0" prefWidth="424.0" text="     Tabla de ir_sequence" textAlignment="CENTER">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="74.0" fitWidth="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/Portada.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
       <HBox prefHeight="8.0" prefWidth="568.0">
          <children>
-            <Label prefHeight="70.0" prefWidth="70.0" text="       Buscar" />
-            <TextField prefHeight="29.0" prefWidth="509.0" />
+            <Label fx:id="cono" prefHeight="70.0" prefWidth="70.0" text="       Buscar" />
+            <TextField fx:id="prueba" prefHeight="29.0" prefWidth="509.0" />
             <Button fx:id="buscar" mnemonicParsing="false">
                <HBox.margin>
                   <Insets right="40.0" />

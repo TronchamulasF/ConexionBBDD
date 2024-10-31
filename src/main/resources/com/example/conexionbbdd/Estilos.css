@@ -10,3 +10,10 @@ TableView {
 #acciones {
     -fx-background-color: lightgreen;
 }
+#cono{
+    -fx-background-color: lightyellow;
+    -fx-text-fill: darkgreen;
+}
+#prueba{
+    -fx-background-color: #fcf032;
+}
